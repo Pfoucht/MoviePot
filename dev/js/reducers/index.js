@@ -1,15 +1,12 @@
-import {combineReducers} from 'redux';
-import UserReducer from './reducer-users';
-import ActiveUserReducer from './reducer-active-user';
+import { combineReducers } from 'redux';
+import MovieReducer from './reducer-movies';
+import SelectedMovieReducer from './reducer-selected-movie';
+import PotReducer from './reducer-pot-movies';
 
-/*
- * We combine all reducers into a single object before updated data is dispatched (sent) to store
- * Your entire applications state (store) is just whatever gets returned from all your reducers
- * */
-
-const allReducers = combineReducers({
-    users: UserReducer,
-    activeUser: ActiveUserReducer
+const rootReducer = combineReducers({
+  selectedMovie: SelectedMovieReducer,
+  movies: MovieReducer,
+  moviePot: PotReducer
 });
 
-export default allReducers
+export default rootReducer;

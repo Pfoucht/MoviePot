@@ -3,3 +3,39 @@ $primary: #006699;
 h2 {
 	color: $primary;
 }
+
+.section-movie-pot {
+	padding: 25px;
+	height: 400px;
+	background-color: #eee;
+}
+
+.overflow {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.card-width {
+	margin: 5px;
+	width: 10rem;
+}
+
+.movie-item {
+	font-size: .8rem;
+	width: 3rem;
+	position: relative;
+}
+
+.movie-item-text {
+  white-space: nowrap;
+  width: 100%;                   /* IE6 needs any width */
+  overflow: hidden;              /* "overflow" value must be different from  visible"*/
+  -o-text-overflow: ellipsis;    /* Opera < 11*/
+  text-overflow:    ellipsis;    /* IE, Safari (WebKit), Opera >= 11, FF > 6 */
+}
+
+.movie-highlight {
+	-webkit-box-shadow: -2px 3px 35px 1px rgba(0,0,0,1);
+	-moz-box-shadow: -2px 3px 35px 1px rgba(0,0,0,1);
+	box-shadow: -2px 3px 35px 1px rgba(0,0,0,1);
+}

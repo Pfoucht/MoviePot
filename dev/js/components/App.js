@@ -1,16 +1,23 @@
-import React from 'react';
-import UserList from '../containers/user-list';
-import UserDetails from '../containers/user-detail';
-require('../../scss/style.scss');
+import React, { Component } from "react";
+require("../../scss/style.scss");
 
-const App = () => (
-    <div>
-        <h2>User List</h2>
-        <UserList />
-        <hr />
-        <h2>User Details</h2>
-        <UserDetails />
-    </div>
-);
+// component imports
+import Nav from './nav';
+import MoviePot from '../containers/movie-pot';
+import SearchBar from '../containers/search-bar';
+import MovieResults from '../containers/movie-results';
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Nav/>
+        <MoviePot/>
+        <SearchBar/>
+        <MovieResults/>
+      </div>
+    )
+  }
+}
 
 export default App;
